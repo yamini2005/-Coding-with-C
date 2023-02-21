@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int m,i,r,s=0;
+printf("enter a three digit number");
+scanf("%d",&m);
+i=m;
+while(i!=0)
+{
+r=i%10;
+s=s+r*r*r;
+i=i/10;
+}
+if(s==m)
+printf("%d is an amstrong number",m);
+else
+printf("%d is not an amstrong number",m);
+getch();
+}
